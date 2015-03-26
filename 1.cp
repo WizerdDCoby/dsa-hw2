@@ -10,16 +10,6 @@
 #include <vector>
 #include "biginteger_for_binary.h"
 
-BigInteger::BigInteger(const int& a){
-    int temp= a;
-    while (temp > 99) {
-        num.push_back(temp%100);
-        temp=temp-(temp%100);
-        temp=temp/100;
-    }
-    
-    num.push_back(temp);
-}
 
 BigInteger::BigInteger(const std::string& s){
     int n1,n2;
